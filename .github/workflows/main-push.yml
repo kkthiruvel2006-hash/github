@@ -1,0 +1,13 @@
+name: Main Branch Push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirm workflow runs
+        run: echo "Workflow is running on main"
